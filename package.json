@@ -4,7 +4,7 @@
   "description": "Proyecto con Node JS",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "type": "module",
   "author": "Efrain May",
