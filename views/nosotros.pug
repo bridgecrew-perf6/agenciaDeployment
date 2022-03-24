@@ -3,4 +3,30 @@ extends ./layout/index
 block contenido
     main.container.mt-5 
         .row
-            h1 #{pagina}
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo tellus, dictum nec rutrum eu, blandit quis dui. Nunc facilisis, diam ut facilisis ullamcorper, nibh arcu euismod augue, a ullamcorper tellus massa eget ligula. 
+
+                p neque mauris, molestie eget risus nec, finibus iaculis tellus. Fusce euismod lorem in lorem dictum ultricies. Donec sed iaculis sem. Aliquam rutrum enim a orci porttitor, ac vehicula dolor mollis. Curabitur lectus purus, scelerisque non quam ac, tincidunt egestas eros. Donec facilisis accumsan dolor vitae hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vestibulum vel eros vel dapibus. Nullam in suscipit quam.
+
+                p in erat et arcu condimentum dignissim. Vivamus faucibus vehicula turpis ut laoreet. In quis libero eget magna suscipit cursus ut et massa. Sed dictum ullamcorper lacus, pellentesque scelerisque ligula malesuada at. Ut congue scelerisque lacus at accumsan. Suspendisse diam purus, iaculis at imperdiet eu, lacinia a nisl. In tristique magna dolor, sed viverra sem pharetra sit amet. Ut tincidunt consequat tempor. Mauris maximus malesuada arcu, ut pellentesque mauris sagittis sit amet. Aliquam lectus massa, iaculis ut eleifend sit amet, vehicula nec velit. Nulla vel ipsum porta, pellentesque risus vel, egestas velit.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p in erat et arcu condimentum dignissim. Vivamus faucibus vehicula turpis ut laoreet. In quis libero eget magna suscipit cursus ut et massa.
+                
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destino 
+                    p in erat et arcu condimentum dignissim. Vivamus faucibus vehicula turpis ut laoreet. In quis libero eget magna suscipit cursus ut et massa.
+                
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios 
+                    p in erat et arcu condimentum dignissim. Vivamus faucibus vehicula turpis ut laoreet. In quis libero eget magna suscipit cursus ut et massa.
