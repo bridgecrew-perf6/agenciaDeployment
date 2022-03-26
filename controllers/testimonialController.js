@@ -1,4 +1,6 @@
-const guardarTestimonial = (req, res) => {
+import { Testimonial } from '../models/Testimoniales.js'
+
+const guardarTestimonial = async (req, res) => {
 
     //validar form
     const { nombre, correo, mensaje } = req.body;
@@ -28,6 +30,17 @@ const guardarTestimonial = (req, res) => {
         });
     }else{
         //almacenar en la base de datos
+        try {
+            await Testimonial.create({
+                nombre, 
+                correo, 
+                mensaje
+            });
+
+            res.redirect('testimoniales');
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 }
